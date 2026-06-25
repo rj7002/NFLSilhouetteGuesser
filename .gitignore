@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.output/
+.vercel/
+*.db
+*.db-shm
+*.db-wal
+public/videos/
+.env
+.env.local
