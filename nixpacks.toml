@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["nodejs_23"]
+nixPkgs = ["nodejs_23", "python3", "pkg-config", "gcc", "gnumake"]
 
 [phases.install]
 cmds = ["npm install", "npx playwright install chromium --with-deps"]
