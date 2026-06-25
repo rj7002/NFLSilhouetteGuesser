@@ -13,7 +13,8 @@
     "ingest": "npx tsx scripts/ingest.ts",
     "ingest:season": "npx tsx scripts/ingest.ts --season",
     "sign-urls": "npx tsx scripts/sign-urls.ts",
-    "download-clips": "npx tsx scripts/download-clips.ts"
+    "download-clips": "npx tsx scripts/download-clips.ts",
+    "start": "node .output/server/index.mjs"
   },
   "dependencies": {
     "@fontsource/bebas-neue": "^5.2.7",

@@ -22,7 +22,8 @@ const clipCache = new Map<string, Clip[]>();
 
 async function fetchTokenViaPlaywright(): Promise<string> {
   const { chromium } = await import("playwright");
-  const browser = await chromium.launch({ headless: true });
+  const executablePath = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined;
+  const browser = await chromium.launch({ headless: true, executablePath });
   const page = await browser.newPage();
   let token: string | null = null;
 
