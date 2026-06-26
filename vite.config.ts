@@ -13,6 +13,6 @@ export default defineConfig({
   vite: {
     optimizeDeps: { exclude: ["onnxruntime-web", "playwright", "fsevents", "better-sqlite3"] },
     assetsInclude: ["**/*.wasm"],
-    build: { cssCodeSplit: false, bundler: "rollup" } as never,
+    build: { bundler: "rollup" } as never,
   },
 });
